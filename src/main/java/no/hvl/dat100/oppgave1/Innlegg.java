@@ -64,18 +64,20 @@ public abstract class Innlegg {
 	
 	 // d) Øker antall likes med 1
 	public void doLike () {
-		
+		likes++; 
 	}
 	
+	 // f) Sammenligner id
 	public boolean erLik(Innlegg innlegg) {
-		throw new UnsupportedOperationException(TODO.method());
+		return innlegg != null && this.id == innlegg.getId();
 
 	}
 	
+	 // e) Returnerer innlegget som tekst
 	@Override
 	public String toString() {
 		
-		throw new UnsupportedOperationException(TODO.method());
+		return id + "\n" + bruker + "\n" + dato + "\n" + likes + "\n";
 				
 	}
 	
