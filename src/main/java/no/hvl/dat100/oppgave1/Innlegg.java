@@ -1,7 +1,5 @@
 package no.hvl.dat100.oppgave1;
 
-import no.hvl.dat100.common.TODO;
-
 public abstract class Innlegg {
 	
 	 // a) Objektvariabler
@@ -81,10 +79,11 @@ public abstract class Innlegg {
 				
 	}
 	
-	// Metoden nedenfor er kun for valgfri oppgave 6
+	// Oppgave 6
 	public String toHTML() {
 		
-		throw new UnsupportedOperationException(TODO.method());
+		 return "<h2>" + getBruker() + "@" + getDato()
+            + " [" + getLikes() + "]</h2>\n";
 				
 	}
 }
